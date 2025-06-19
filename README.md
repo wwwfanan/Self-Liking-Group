@@ -28,7 +28,7 @@ This code was developed and tested in **R ≥ 4.5.0**. Please install the follow
 ```r
 install.packages(c("igraph", "tidyverse", "data.table", "ggplot2"))
 
----
+**
 
 ## ✉️ Contact
 
