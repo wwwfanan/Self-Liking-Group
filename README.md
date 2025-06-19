@@ -23,7 +23,7 @@ This repository contains the data and R code used in support of our study:
    - Country clustering based on homophily metrics
 
 6. `AuthorNode_CountryHomophily_year1980_Gap3_r=1.0_LA50_p0.csv`  
-   - Country-level SLG (Self-Liking Group) results for the year 1980
+   - Country-level SLG results for the year 1980
 
 ---
 
@@ -32,15 +32,15 @@ This repository contains the data and R code used in support of our study:
 ### 1. `Country_SLG.R`  
 Core script for SLG computation across countries in a scientific collaboration network.
 
-- **Inputs**: files 1–4  
-- **Output**: SLG score per country
+- **Inputs**: Data 1–4  
+- **Output**: SLG score per country (1980 as and example)
 
 ---
 
 ### 2. `Country_Clustering.R`  
 Script to visualize clustering results on a world map based on SLG.
 
-- **Inputs**: files 5–6  
+- **Inputs**: Data 5–6  
 - **Output**: Image of clustered countries on a global map
 
 ---
@@ -67,5 +67,5 @@ A collection of custom functions used across the main scripts:
 Run the following command in your R console to install dependencies:
 
 ```r
-install.packages(c("igraph", "tidyverse", "data.table", "ggplot2"))
+install.packages(c("igraph", "plyr", "dplyr", "data.table", "ggplot2"))
 
