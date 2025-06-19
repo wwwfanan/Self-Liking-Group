@@ -1,19 +1,36 @@
-This repository contains data and codes we used in support of our work "Collaboration Between Countries is Associated with Academic Excellence and Funding".
+# 🌍 Collaboration and Academic Excellence – SLG Code and Data
 
-Structure
+This repository contains the data and R code used in support of our study:  
+**"Collaboration Between Countries is Associated with Academic Excellence and Funding"**
 
-"Country_SLG.R": Core function implementing the SLG computation.
+---
 
-"FUN_....R": Some custom functions are defined separately and are required by the main script Country_SLG.R.
+## 📁 Structure
 
-"....csv": A sample dataset for one year’s scientific collaboration network is included for demonstration purposes. The data represents a country-level co-authorship network, where nodes correspond to countries and edges indicate co-authorship links between them within a specific year.
-Additional metadata on the countries involved in the network (e.g., region classification, income level, scientific output) is also provided in a separate file. 
+- 🔹 **`Country_SLG.R`**  
+  Core script implementing the SLG (Self-Liking Growth) computation for country-level scientific collaboration networks.
 
+- 🔹 **`FUN_*.R`**  
+  A set of custom functions required by the main script. These include routines for network preprocessing, SLG matrix generation, and temporal aggregation.
 
-Installation & Requirements
+- 🔹 **`.csv` files**  
+  - A sample dataset for one year’s country-level co-authorship network. Nodes represent countries, and edges indicate co-authorship links within that year.  
+  - An additional metadata file provides country-level attributes, such as:
+    - 🌐 Region classification  
+    - 💰 Income group  
+    - 📈 Scientific output levels  
 
-This code requires R ≥ 4.5.0 and the following packages: 
+---
 
+## ⚙️ Installation & Requirements
+
+This code was developed and tested in **R ≥ 4.5.0**. Please install the following packages before running:
+
+```r
 install.packages(c("igraph", "tidyverse", "data.table", "ggplot2"))
 
-If you have any questions, please contact me at wwwwfanang@gmail.com.
+
+## ✉️ Contact
+
+If you have any questions or need support, feel free to contact:  
+📧 **wwwwfanang@gmail.com**
