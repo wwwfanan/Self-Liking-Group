@@ -1,43 +1,71 @@
 # 🌍 Collaboration and Academic Excellence – SLG Code and Data
 
 This repository contains the data and R code used in support of our study:  
-**"Collaboration Between Countries is Associated with Academic Excellence and Funding"** 
+**"Collaboration Between Countries is Associated with Academic Excellence and Funding"**
 
 ---
 
-## 📁 Structure
+## 📦 Dataset Description
 
-**CODE**
-- 🔹 **`Country_SLG.R`**  
-  Core script implementing the SLG (Self-Liking Group) computation for country-level scientific collaboration networks.
+1. `Data_AuthorEdge_GC_1980_Gap3.csv`  
+   - Collaboration network: nodes represent authors; links represent co-authorships (per paper)
 
-  input ...
-  output...
+2. `Data_AuthorEdge_GC_1980_Gap3_Community_LouvainP_r=1.csv`  
+   - Louvain-based community detection result for the author network
 
-- 🔹 **`FUN_*.R`**  
-  A set of custom functions required by the main script. These include routines for network preprocessing, SLG matrix generation, and temporal aggregation.
+3. `Data_AuthorAffiliationCountry_AllYear.csv`  
+   - Author's country and institutional affiliation
 
-**SMALL DATASET**
-- 🔹 **`.csv` files**  
-  - A sample dataset for one year’s country-level co-authorship network. Nodes represent countries, and edges indicate co-authorship links within that year.  
-  - An additional metadata file provides country-level attributes, such as:
-    - Region classification  
-    - Continent
-  add the name of file 
-  
+4. `Country_Continent.csv`  
+   - Country-to-continent mapping
+
+5. `AuthorNode_CountryHomophily_Cluster_k=4new.csv`  
+   - Country clustering based on homophily metrics
+
+6. `AuthorNode_CountryHomophily_year1980_Gap3_r=1.0_LA50_p0.csv`  
+   - Country-level SLG (Self-Liking Group) results for the year 1980
+
+---
+
+## 🧠 Code Description
+
+### 1. `Country_SLG.R`  
+Core script for SLG computation across countries in a scientific collaboration network.
+
+- **Inputs**: files 1–4  
+- **Output**: SLG score per country
+
+---
+
+### 2. `Country_Clustering.R`  
+Script to visualize clustering results on a world map based on SLG.
+
+- **Inputs**: files 5–6  
+- **Output**: Image of clustered countries on a global map
+
+---
+
+### 3. `FUN_*.R`  
+A collection of custom functions used across the main scripts:
+
+- Network preprocessing  
+- SLG matrix generation  
+- Temporal data aggregation
 
 ---
 
 ## ⚙️ Installation & Requirements
 
-- **Operating System**  
-  Tested on MacOS (≥ 12.0), Windows 10/11
+### 💻 Operating System
+- Tested on **macOS (≥ 12.0)** and **Windows 10/11**
 
-- **R Version**  
-  Requires **R ≥ 4.5.0**
+### 🧮 R Environment
+- Requires **R ≥ 4.5.0**
 
-- **R Packages**  
-  The following R packages are required:
-  ```r
-  install.packages(c("igraph", "tidyverse", "data.table", "ggplot2"))
+### 📦 Required R Packages
+
+Run the following command in your R console to install dependencies:
+
+```r
+install.packages(c("igraph", "tidyverse", "data.table", "ggplot2"))
 
