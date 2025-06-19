@@ -23,8 +23,14 @@ This repository contains the data and R code used in support of our study:
 
 ## ⚙️ Installation & Requirements
 
-This code was developed and tested in **R ≥ 4.5.0**. Please install the following packages before running:
+- **Operating System**  
+  Tested on MacOS (≥ 12.0), Windows 10/11
 
-```r
-install.packages(c("igraph", "tidyverse", "data.table", "ggplot2"))
+- **R Version**  
+  Requires **R ≥ 4.5.0**
+
+- **R Packages**  
+  The following R packages are required:
+  ```r
+  install.packages(c("igraph", "tidyverse", "data.table", "ggplot2"))
 
