@@ -11,6 +11,9 @@ This repository contains the data and R code used in support of our study:
 - 🔹 **`Country_SLG.R`**  
   Core script implementing the SLG (Self-Liking Group) computation for country-level scientific collaboration networks.
 
+  input ...
+  output...
+
 - 🔹 **`FUN_*.R`**  
   A set of custom functions required by the main script. These include routines for network preprocessing, SLG matrix generation, and temporal aggregation.
 
