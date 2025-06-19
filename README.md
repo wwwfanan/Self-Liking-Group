@@ -8,7 +8,7 @@ This repository contains the data and R code used in support of our study:
 ## 📁 Structure
 
 - 🔹 **`Country_SLG.R`**  
-  Core script implementing the SLG (Self-Liking Growth) computation for country-level scientific collaboration networks.
+  Core script implementing the SLG (Self-Liking Group) computation for country-level scientific collaboration networks.
 
 - 🔹 **`FUN_*.R`**  
   A set of custom functions required by the main script. These include routines for network preprocessing, SLG matrix generation, and temporal aggregation.
@@ -16,9 +16,8 @@ This repository contains the data and R code used in support of our study:
 - 🔹 **`.csv` files**  
   - A sample dataset for one year’s country-level co-authorship network. Nodes represent countries, and edges indicate co-authorship links within that year.  
   - An additional metadata file provides country-level attributes, such as:
-    - 🌐 Region classification  
-    - 💰 Income group  
-    - 📈 Scientific output levels  
+    - Region classification  
+    - Continent 
 
 ---
 
@@ -29,6 +28,7 @@ This code was developed and tested in **R ≥ 4.5.0**. Please install the follow
 ```r
 install.packages(c("igraph", "tidyverse", "data.table", "ggplot2"))
 
+---
 
 ## ✉️ Contact
 
