@@ -14,12 +14,14 @@ This repository contains the data and R code used in support of our study:
 - 🔹 **`FUN_*.R`**  
   A set of custom functions required by the main script. These include routines for network preprocessing, SLG matrix generation, and temporal aggregation.
 
-**Small Dataset**
+**SMALL DATASET**
 - 🔹 **`.csv` files**  
   - A sample dataset for one year’s country-level co-authorship network. Nodes represent countries, and edges indicate co-authorship links within that year.  
   - An additional metadata file provides country-level attributes, such as:
     - Region classification  
-    - Continent 
+    - Continent
+  add the name of file 
+  
 
 ---
 
