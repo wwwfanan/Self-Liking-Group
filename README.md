@@ -15,7 +15,7 @@ This repository contains the data and R code used in support of our study:
 
 3. `Data_AuthorAffiliationCountry_AllYear.csv`  
    - Author's country and institutional affiliation
-   - 📦 Due to its large size (~1GB), this file is hosted in the [Releases]
+   - Due to its large size (~1GB), this file is hosted in the [Releases - Data]
 
 4. `Country_Continent.csv`  
    - Country-to-continent mapping
